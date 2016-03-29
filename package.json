@@ -1,0 +1,32 @@
+{
+  "name": "fsm",
+  "version": "1.0.0",
+  "description": "Finite State Machine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dandart/fsm.git"
+  },
+  "keywords": [
+    "spaghetti",
+    "pasta",
+    "noodles",
+    "fsm",
+    "appendage"
+  ],
+  "author": "Dan Dart <git@dandart.co.uk>",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/dandart/fsm/issues"
+  },
+  "homepage": "https://github.com/dandart/fsm#readme",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.6.5",
+    "babel-plugin-array-includes": "^2.0.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.7.4"
+  }
+}

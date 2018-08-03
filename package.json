@@ -24,9 +24,9 @@
   },
   "homepage": "https://github.com/dandart/fsm#readme",
   "dependencies": {
-    "@babel/cli": "7.0.0-beta.54",
-    "@babel/core": "7.0.0-beta.54",
-    "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.54",
+    "@babel/cli": "7.0.0-beta.55",
+    "@babel/core": "7.0.0-beta.55",
+    "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.55",
     "babel-plugin-array-includes": "^2.0.3"
   }
 }

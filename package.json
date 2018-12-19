@@ -4,7 +4,10 @@
   "description": "Finite State Machine",
   "main": "src/index.mjs",
   "scripts": {
-    "test": "eslint src/*.mjs && node --experimental-modules src/index.spec.mjs"
+    "build": "babel -d .app esnext",
+    "test": "eslint src/*.js && node -r esm src/index.spec.js",
+    "test:esnext": "eslint esnext/*.js && node -r esm .app/index.spec.js",
+    "watch": "babel -wd .app esnext"
   },
   "repository": {
     "type": "git",
@@ -23,8 +26,15 @@
     "url": "https://github.com/dandart/fsm/issues"
   },
   "homepage": "https://github.com/dandart/fsm#readme",
-  "dependencies": {},
+  "dependencies": {
+    "esm": "^3.0.84"
+  },
   "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "@babel/plugin-proposal-private-methods": "^7.2.1",
+    "babel-eslint": "^10.0.1",
     "eslint": "^5.7.0"
   }
 }

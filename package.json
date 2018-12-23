@@ -2,7 +2,7 @@
   "name": "fsm",
   "version": "1.0.0",
   "description": "Finite State Machine",
-  "main": "src/index.mjs",
+  "main": "src/index.js",
   "scripts": {
     "build": "babel -d .app esnext",
     "test": "eslint src/*.js && node -r esm src/index.spec.js",

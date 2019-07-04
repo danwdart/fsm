@@ -7,7 +7,9 @@
     "build": "babel -d .app esnext",
     "test": "eslint src/*.js && node -r esm src/index.spec.js",
     "test:esnext": "eslint esnext/*.js && node -r esm .app/index.spec.js",
-    "watch": "babel -wd .app esnext"
+    "watch": "babel -wd .app esnext",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -27,7 +29,8 @@
   },
   "homepage": "https://github.com/dandart/fsm#readme",
   "dependencies": {
-    "esm": "^3.2.22"
+    "esm": "^3.2.22",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
@@ -36,5 +39,6 @@
     "@babel/plugin-proposal-private-methods": "^7.4.4",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.0.0"
-  }
+  },
+  "snyk": true
 }
